@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clasificador.css">
+    <title>clasificador</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="main--preguntas-respuestas">
+            <div class="main--preguntas">
+                <h1 id="pregunta">¿Tu residuo es orgánico?</h1>
+            </div>
+            <div>
+                <section class="main--respuestas-container">
+                    <article id="respuesta--afirmativa">
+                        <span class="ok"></span>
+                        <p class="respuesta--text-button">
+                            Sí
+                        </p>
+                    </article>
+                    <article id="respuesta--afirmativa">
+                        <button id="respuestaSi" type="button" onclick="">
+                            Sí
+                        </button>
+                    </article>
+                    <article id="respuesta--negativa">
+                        <button id="respuestaNo" type="button" onclick="">
+                            No
+                        </button>
+                    </article>
+                    <article id="respuesta--dudosa">
+                        <button id="respuestaNoSe" type="button" onclick="">
+                            ¿Qué es orgánico?
+                        </button>
+                    </article>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./clasificador.js"></script>
+</body>
+</html>
