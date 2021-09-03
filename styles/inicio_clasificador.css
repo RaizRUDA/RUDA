@@ -24,7 +24,7 @@ a {
 header{
     width: 100%;
     min-width: 320px;
-    height: 50px;
+    height: 40px;
     display: flex;
     background-color: var(--color-presentación);
     min-width: 320px;
@@ -42,19 +42,19 @@ nav {
     width: 100vw;
 }
 nav .nav-right-section a {
-    margin-right: 20px;
     color: #ffffff;
 }
 nav .nav-right-section li{
     width: auto;
     height: auto;
+    margin: 5px;
 }
 nav .nav-right-section img{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background-color: var(--color-elección);
     border-radius: 3px;
-    margin: 10px;
+    margin: 5px;
 }
 
 /* body */
@@ -71,7 +71,7 @@ main {
 }
 main .guide--title-container{
     width: 50%;
-    max-width: 190px;
+    max-width: 230px;
     margin: 0;
     height: auto;
     display: inline;
@@ -134,7 +134,8 @@ main .main-start-button a{
 .main--contenedores-residuo{
     width: 100%;
     min-width: 160px;
-    max-width: 160px;
+    max-width: 230px;
+    min-height: 40px;
     height: auto;
     min-height: calc(90vh/8);
     display: inline-block;
