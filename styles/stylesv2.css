@@ -416,4 +416,30 @@ main .evidencias img{
   max-width: 260px;
   border-radius: 5px;
 }
+main .evidencias-container{
+  background-color: var(--explicación-background);
+  width: 80%;
+  height: auto;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .evidencias-container .evidencias {
+  width: 100%;
+  position: relative;
+}
+main .evidencias-container a{
+  width: 100%;
+}
+main .evidencias-container .evidencias figure{
+  width: 100%;
+  height: auto;
+}
+main .evidencias-container .evidencias img{
+  width: 100%;
+  margin: 0 auto;
+}
 /* footer */

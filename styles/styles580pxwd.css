@@ -90,3 +90,10 @@ main  .main--introduction .perspectivas .material--didactico{
 main .main--introduction .anexos div {
     min-width: 500 ;
 }
+main .evidencias-container {
+    display: flex;
+    flex-direction: row;
+}
+main .evidencias-container #delimitacion{
+    min-width: 445px;
+}
