@@ -1,13 +1,419 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+:root {
+  /* paleta de colores */
+  --inicio-background: #3ea86e;
+  --sugestion-background: #1d2a3b;
+  --material-graphic: #0d815a;
+  --explicación-background: #224f74;
+  --action-choice: #09bc95;
+  --pasos: rgb(175, 66, 66);
+  --text: white;
 }
-html{
-    font-size: 62.5%;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
 /* header */
+
+header {
+  width: 100vw;
+  height: 40px;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav .nav-right-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav .nav-right-section a {
+  color: var(--explicación-background);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+nav .nav-right-section li {
+  width: auto;
+  height: auto;
+  margin: 5px;
+  list-style: none;
+}
+nav .nav-right-section img {
+  width: 30px;
+  height: 30px;
+  background-color: var(--sugestion-background);
+  border-radius: 2px;
+}
 
 /* main */
 
+main {
+  background-color: rgb(226, 224, 224);
+  width: 100vw;
+}
+main .main--portada {
+  width: 100vw;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  min-width: 320px;
+  min-height: 565px;
+  background-color: var(--material-graphic);
+  border-radius: 5px;
+  position: static;
+}
+main .main--portada img {
+  width: 150px;
+}
+main .main--portada h1 {
+  color: white;
+  margin: 0 auto;
+  padding: 25px;
+  font-size: 3rem;
+  width: fit-content;
+  display: flex;
+}
+main figure {
+  width: fit-content;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+}
+main .main--portadamarca{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+main .main--portadatos {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main .main--portada-datos {
+  background-color: var(--inicio-background);
+  width: 280px;
+  border-radius: 10px;
+  margin: 4px auto;
+  display: flex;
+  align-items: center;
+}
+main .main--portada h2 {
+  color: white;
+  padding: 15px 15px 15px 15px;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+main .foto-autor {
+  width: 40%;
+}
+main .foto-autor img {
+  width: 100px;
+  padding: 2px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 5px solid var(--material-graphic);
+}
+
+/* main introduction */
+
+main .lista {
+  width: 280px;
+  margin: 0 auto;
+  padding: 15px
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+}
+main .lista li {
+  margin: 5px;
+  font-size: 1.6rem;
+  background-color:var(--material-graphic);
+  padding: 15px;
+  border-radius: 6px;
+  list-style: none;
+  color: var(--text);
+}
+main a{
+  font-size: 1.6rem;
+  color: var(--text);
+}
+main .main--introduction {
+  width: 100vw;
+  min-width: 320px;
+  margin: 10px auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  min-height: 300px;
+  background-color: var(--sugestion-background);
+  border-radius: 5px;
+}
+main .main--introduction h1 {
+  color: var(--text);
+  margin: 0 auto;
+  width: fit-content;
+  padding: 20px 0 20px 0;
+  font-size: 2.2rem;
+}
+main .main--introduction h2 {
+  color: var(--text);
+  max-width: 600px ;
+  padding: 2rem 2rem 2rem 2rem;
+  margin: 0 auto;
+  font-size: 2rem;
+  text-align: center;
+}
+main .main--introduction p {
+  color: var(--text);
+  padding: 15px 15px 15px 15px;
+  max-width: 550px;
+  font-size: 1.5rem;
+  text-align: justify;
+  display: inline-block;
+  position: relative;
+}
+section article .parrafos-sueltos {
+  max-width: 550px;
+  min-width: 210px;
+  margin: 0 auto;
+  position: relative;
+}
+section article .parrafos-sueltos p{
+  font-size: 2rem;
+}
+/* main introduction ODS */
+
+main .main--introduction-agenda2030 {
+  background-color: var(--explicación-background);
+  min-height: 280px;
+  width: 90%;
+  margin: 0 auto;
+  display: flexbox;
+  border-radius: 5px;
+  transform-style: preserve-3d;
+  position: relative;
+}
+main .main--introduction-ODS {
+  min-width: 280px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 15px 0 15px 0;
+  position: relative;
+  display: flex;
+}
+main .main--introduction-ODS button:hover {
+  transform: scale(1.1);
+  transition: transform 300ms;
+}
+main .main--introduction-ODS button {
+  border-style: none;
+  border-radius: 5px;
+  margin: 14px;
+  position: relative;
+  margin: 0 auto;
+}
+main .main--introduction-ODS img {
+  width: 80vw;
+  max-width: 100px;
+  border-radius: 5px;
+}
+/* ¿Poirqué surje?*/
+main .main--introduction-motivos{
+  display: block;
+}
+main .foto--sitioexterno {
+  width: 90vw;
+  max-width: fit-content;
+  min-height: fit-content;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+}
+main figure {
+  height: fit-content;
+  position: relative;
+  padding: 10px;
+}
+main .foto--sitioexterno img {
+  max-width: 260px;
+  border-radius: 10px;
+  position: relative;
+
+}
+main .foto--sitioexterno a {
+  color: var(--text);
+  text-align: center;
+  opacity: 0;
+
+}
+main .foto--sitioexterno a:hover{
+  opacity: 0.3;
+}
+main .main--introductioncasos-container {
+  width: 100vw;
+  background-color: var(--inicio-background);
+  min-height: 500px;
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+}
+/* Casos de éxito */
+main .main--introduction-casos {
+  height: 14.9rem;
+  min-width: 272px;
+  margin: 30px auto;
+  transform-style: preserve-3d;
+  position: relative;
+  display: inline-flex;
+}
+
+main .main--introduction-casos .tarjeta {
+  width: 272px;
+  height: 17rem;
+  background-color: var(--material-graphic);
+  border-radius: 6px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  transition: transform 500ms;
+  box-shadow: 2px 2px 2px 2px #1d2a3b28;
+}
+main .main--introduction-casos p {
+  min-width: 272px;
+  position: absolute;
+  background-color: #2bb887f5;
+  border-radius: 6px;
+}
+main .main--introduction-casos .tarjeta h2 {
+  position: relative;
+}
+main .main--introduction-casos .tarjeta:hover {
+  transform: scale(1.3);
+  opacity: 0.1;
+}
+
+/* main introduction problema */
+main .main--introduction-problema {
+  min-height: 45rem;
+}
+main .problemas{
+  min-width: 230px;
+  height: 330px;
+  background-color: var(--inicio-background);
+  border-radius: 6px;
+  position: relative;
+  margin: 5px;
+}
+main .problemas img{
+  max-width: 200px;
+}
+main .problemas figure{
+  padding: 0;
+}
+/* objectives */
+
+main .objectives--container {
+  width: 90%;
+  background-color: var(--explicación-background);
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 6px;
+  position: relative;
+}
+main .objective-cards {
+  display: flex;
+  height: 350px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  align-items: center;
+  align-content: space-between;
+}
+
+main .objective-cards::-webkit-scrollbar-track {
+  display: none;
+}
+main .objetivo {
+  min-width: 240px;
+  max-width: 250px;
+  min-height: 300px;
+  background-color: var(--text);
+  margin: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  box-shadow: 3px 3px 0px 3px rgba(0, 0, 0, 0.288);
+  position: relative;
+  scroll-snap-align: center;
+}
+main .objetivo h3 {
+  width: 70%;
+  margin: 15px auto;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Metodology time */
+main .steps--tarjeta{
+  background-color: var(--pasos);
+}
+main .documento{
+  width: 220px;
+  margin: 15px auto;
+  background-color: var(--action-choice);
+  border-radius: 6px;
+}
+main .material--didactico{
+  background-color: var(--explicación-background);
+  width: 280px;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .resultados .obtenidos #links{
+  padding: 15px;
+}
+main .lista .inner--list li{
+  background-color: var(--action-choice);
+  margin: 8px;
+  min-width: 200px;
+  text-align: center;
+  margin: 10px 3px;
+}
+main .lista .inner--list {
+  position: absolute;
+  width: 240px;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  align-items: center;
+  align-content: space-between;
+}
+main ul .contenedor--innerlist {
+  width: fit-content;
+  max-width: 100vw;
+  height: 210px;
+  background-color: var(--sugestion-background);
+  position: relative;
+}
+main .evidencias img{
+  max-width: 260px;
+  border-radius: 5px;
+}
 /* footer */

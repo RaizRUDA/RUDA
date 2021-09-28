@@ -1,0 +1,92 @@
+main .main--portada {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+main .main--introduction-agenda2030{
+    max-width: 500px;
+}
+main .main--portadatos {
+    margin: 0 auto;  
+    display: flexbox; 
+    lign-content: space-around; 
+}
+main .main--portada-datos{
+    min-width: 300px;
+    position: relative;
+}
+main .main--portadamarca {
+    margin: 0 auto;
+    min-width: 215px;
+    max-width: 300px;
+}
+main article .lista-figura {
+    display: flex;
+    align-items: center;
+}
+main section .metodology--place .lista {
+    width: 700px;
+}
+main .resultados .esperados{
+    display: flex;
+    max-width: 580px;
+}
+main .resultados .obtenidos{
+    display: flex;
+    max-width: 580px;
+}
+main .resultados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .resultados div{
+    margin: 3px;
+}
+
+article .metodology--materialsymethods #lista-de-listas {
+    display: flex;
+    flex-direction: row;
+    min-width: 520px;
+    height: fit-content;
+    margin: 0 auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    align-items: center;
+    align-content: space-between;
+}
+article .metodology--materialsymethods #lista-de-listas>li{
+    min-width: 340px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+main .lista .inner--list{
+    margin: 0 auto;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
+    align-items: center;
+    align-content: space-between;
+}
+main .resultados .obtenidos #links{
+    min-width: 550px;
+    padding: 15px;
+}
+main  .main--introduction .reflexiones .material--didactico{
+    width: 550;
+}
+main  .main--introduction .conclusiones .material--didactico{
+    width: 550;
+}
+main  .main--introduction .perspectivas .material--didactico{
+    width: 550;
+}
+main .main--introduction .anexos div {
+    min-width: 500 ;
+}
